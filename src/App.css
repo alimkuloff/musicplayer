@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.playlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.playlist-card {
+  width: 150px;
+  text-align: center;
+}
