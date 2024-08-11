@@ -1,12 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { store }  from './redux/store';
-import App from './App';
-import './App.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { configureStore } from "@reduxjs/toolkit";
+import playlistReducer from "./redux/playlistSlice";
+import App from "./App";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <Provider store={store}>
-        <App />
-    </Provider>
+const store = configureStore({
+  reducer: {
+    playlist: playlistReducer,
+  },
+});
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
 );
