@@ -4,7 +4,7 @@ const FriendActivity = () => {
   return (
     <div className="max-w-[240px] bg-[#121212] text-white h-screen p-5 flex flex-col fixed right-0">
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-bold">Friend Activity</h2>
+        <h2 className="text-lg font-bold">N A.dev</h2>
         <div className="flex gap-2">
           <SettingOutlined className="text-xl cursor-pointer" />
           <CloseOutlined className="text-xl cursor-pointer" />
